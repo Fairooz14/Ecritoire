@@ -3,7 +3,6 @@
 A private digital diary. Each person who signs up gets their own account and
 their own space to write in, with no one else able to see it.
 
-Color theme: Cobblestone `#AA9F95`, Creme `#D2CDC3`, Ruby `#3E1F20`, Brownie `#3E2B24`.
 
 ## What the app does
 
@@ -103,21 +102,6 @@ of your account on that device.
 
 Your entries are stored in `backend/data/Écritoire.db`, and any uploaded
 files are stored in `backend/uploads/`. Both are already excluded from git.
-
-## Publishing to GitHub
-
-```bash
-git init
-git add .
-git commit -m "Écritoire  diary"
-git branch -M main
-git remote add origin <your-repo-url>
-git push -u origin main
-```
-
-Your `.env` file, `node_modules`, the database, and uploaded files are all
-excluded from git already, so none of your private data or secrets get
-committed.
 
 ## Using it after you host it
 
